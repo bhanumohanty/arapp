@@ -15,6 +15,7 @@
 		2538CDEB253B520600340679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2538CDE9253B520600340679 /* LaunchScreen.storyboard */; };
 		2538CDF6253B520700340679 /* arappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2538CDF5253B520700340679 /* arappTests.swift */; };
 		2538CE01253B520700340679 /* arappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2538CE00253B520700340679 /* arappUITests.swift */; };
+		2538CE1D253B64BC00340679 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2538CE1C253B64BC00340679 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2538CDFC253B520700340679 /* arappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2538CE00253B520700340679 /* arappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arappUITests.swift; sourceTree = "<group>"; };
 		2538CE02253B520700340679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2538CE1C253B64BC00340679 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = Models.scnassets; path = "../../../Downloads/ARKit-Example-by-Apple-master/ARKitExample/Models.scnassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2538CDDD253B520400340679 /* arapp */ = {
 			isa = PBXGroup;
 			children = (
+				2538CE1C253B64BC00340679 /* Models.scnassets */,
 				2538CDDE253B520400340679 /* AppDelegate.swift */,
 				2538CDE0253B520400340679 /* SceneDelegate.swift */,
 				2538CDE2253B520400340679 /* ViewController.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2538CDEB253B520600340679 /* LaunchScreen.storyboard in Resources */,
+				2538CE1D253B64BC00340679 /* Models.scnassets in Resources */,
 				2538CDE8253B520600340679 /* Assets.xcassets in Resources */,
 				2538CDE6253B520400340679 /* Main.storyboard in Resources */,
 			);
@@ -436,7 +440,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G8AM96J5YL;
 				INFOPLIST_FILE = arapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.athome.arapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = arapp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,7 +461,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G8AM96J5YL;
 				INFOPLIST_FILE = arapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.athome.arapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = arapp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
